@@ -96,24 +96,79 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-const namberOfFilms = +prompt('Сколько фильмов Вы уже посмотрели?', '');
+// const namberOfFilms = +prompt('Сколько фильмов Вы уже посмотрели?', '');
 
-const personalMovieDB = {
-   count: namberOfFilms,
-   movies: {},
-   actors: {},
-   genres: [],
-   privat: false
-};
+// const personalMovieDB = {
+//    count: namberOfFilms,
+//    movies: {},
+//    actors: {},
+//    genres: [],
+//    privat: false
+// };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+// const a = prompt('Один из последних просмотренных фильмов?', ''),
+//       b = prompt('На сколько оцените его?', ''),
+//       c = prompt('Один из последних просмотренных фильмов?', ''),
+//       d = prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
 // урок окончен
+
+// УСЛОВИЯ
+
+if (4 == 9) {
+   console.log('Ok!');
+} else {
+   console.log('false'); 
+}
+
+const num = 50;
+
+if (num < 49) {
+   console.log('неверно');
+} else if (num > 100) {
+   console.log('Много');
+} else {
+   console.log('не в этот раз!');
+}
+
+
+
+let userAge = '30';
+console.log(userAge);
+console.log(typeof(userAge));
+
+userAge = Number(userAge);
+console.log(userAge);
+console.log(typeof(userAge));
+
+
+
+
+
+let apple = 15 ** 7 - (10 * 3);
+let cherry = apple;
+console.log(cherry); 
+
+
+// УСЛОВИЯ
+const num = 50;
+switch (num) {
+   case 49: 
+      console.log('неверно');
+      break;
+   case 100:
+      console.log('много');
+      break;
+   case 57:
+      console.log('в точку!');
+      break;
+   default: 
+      console.log('не в этот раз!!');
+         break;
+}
+// со строками работает точно так же (НА СТРОГОЕ СРАВНЕНИЕ)
